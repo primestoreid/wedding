@@ -8,7 +8,7 @@
 body{
     font-size: 1.2rem;
     font-family: "Work Sans", sans-serif;
-    min-height: 1000px;
+    min-height: 900px;
 }
 .hero::before{
     content: '';
@@ -81,7 +81,7 @@ body{
 .home{
     background-image: url(img/bg-bunga.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 50vh;
     margin-top: -6rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
@@ -103,7 +103,8 @@ body{
 }
 
 .home .couple{
-    margin-top: 100px;
+    margin-top: 30px;
+    min-height: 30vh;
 }
 .home .couple h3{
     font-family: 'Sacramento';
@@ -165,6 +166,49 @@ body{
     border-bottom: 1px solid #999;
     font-weight: 300;
 }
+
+.penutup::before{
+    content: '';
+    position: absolute;
+    filter: grayscale();
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/pixelcut-export.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* min-height: 50vh; */
+    /* margin-top: 6rem; */
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    z-index: -1;
+}
+.penutup{
+    position: relative;
+    min-height: 100%;
+}
+.penutup p{
+    color: white;
+    text-shadow: var(--shadow);
+    padding-top: 6rem;
+}
+.penutup h2{
+    color:var(--pink);
+    text-shadow: white;
+    font-family: 'Sacramento';
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow:#ccc;
+}
+.penutup h3{
+    margin-top: 2rem;
+    text-shadow: var(--shadow);
+    font-family: 'Sacramento';
+    font-size: 2rem;
+    padding-bottom: 6rem;
+}
+
 
 footer{
     padding: 3rem;
@@ -262,7 +306,14 @@ footer li{
     }
 
     .simply-countdown > .simply-section{
-        padding: 45px;
+        padding: 40px;
         margin: 3px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .sticky-top{
+        overflow: hidden;
     }
 }
